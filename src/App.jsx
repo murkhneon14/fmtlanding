@@ -143,7 +143,7 @@ function Home() {
         <p className="hero-sub">Connect with local tutors by subject and location — or list yourself and grow your students.</p>
 
         <div className="hero-actions" style={{ justifyContent: 'center' }}>
-          <button className="btn-blue">Download on play store</button>
+          <button className="btn-blue" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.findmytutor.app', '_blank', 'noopener,noreferrer')}>Download on play store</button>
         </div>
       </section>
 
@@ -485,13 +485,16 @@ function FounderPage() {
           style={{ width: '100%' }}
         >
           <p className="about-text">
-            I built Find My Tutor because I saw the problem firsthand — students in smaller cities struggling to find the right teacher, and talented tutors with no way to reach the students who needed them. Every search meant WhatsApp groups, word of mouth, and dead ends.
+            I built Find My Tutor after seeing the struggle up close — students in smaller cities searching endlessly for the right guidance, and skilled tutors waiting to be discovered. Finding a teacher meant relying on Internet, Facebook, WhatsApp groups, referrals, and often running into dead ends.
           </p>
           <p className="about-text" style={{ marginTop: '1.5rem' }}>
-            So I built the bridge. A simple way for students to find tutors nearby by subject, and for teachers to be discovered by the students they're meant to teach.
+            So I decided to change that.
           </p>
           <p className="about-text" style={{ marginTop: '1.5rem' }}>
-            Find My Tutor is built by someone who's been on both sides of that gap — and refused to accept that it had to stay that way.
+            I created a simple platform where students can easily find tutors nearby based on their needs, and teachers can connect with the students who are looking for them.
+          </p>
+          <p className="about-text" style={{ marginTop: '1.5rem' }}>
+            Find My Tutor is built by someone who understands both sides of the gap — and chose to turn that challenge into a solution.
           </p>
         </motion.div>
       </div>
@@ -844,7 +847,7 @@ function App() {
 
           <div className="nav-right">
             <span className="early-access-text">iphone early access?</span>
-            <button className="btn-blue">Download Beta</button>
+            <button className="btn-blue" onClick={() => window.open('https://testflight.apple.com/join/gxEWKKVY', '_blank', 'noopener,noreferrer')}>Download Beta</button>
           </div>
         </div>
       </nav>
