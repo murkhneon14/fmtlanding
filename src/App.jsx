@@ -474,8 +474,7 @@ function FounderPage() {
         >
           <h3 className="about-heading" style={{ marginBottom: '0.5rem', fontSize: '2rem' }}>Tana John</h3>
           <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: '500' }}>CEO & MD</p>
-          <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '0.2rem' }}>NERIST Alumnus (Postgraduate)</p>
-          <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '1.5rem' }}>The Lekhi Tutorials</p>
+          <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '1.5rem' }}>NERIST Alumnus (Postgraduate)</p>
         </motion.div>
 
         <motion.div
