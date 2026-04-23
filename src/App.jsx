@@ -535,10 +535,10 @@ function ContactPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', justifyContent: 'center' }}
         >
-          <button className="btn-black" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <button className="btn-black" onClick={() => window.open('https://chat.whatsapp.com/Bei1HqH5pvHJqdl1R8Yba3', '_blank', 'noopener,noreferrer')} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <MessageCircle size={18} /> Join WhatsApp Community
           </button>
-          <button className="btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <button className="btn-outline" onClick={() => window.location.href = 'mailto:mailfindmytutor@gmail.com'} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <Mail size={18} /> Email Us
           </button>
         </motion.div>
