@@ -1,8 +1,19 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Layers, MessageCircle, Mail } from 'lucide-react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import './index.css';
+
+// ── SEO helper: updates <title> and <meta name="description"> per page ──
+function usePageMeta(title, description) {
+  useEffect(() => {
+    document.title = title;
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', description);
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute('href', window.location.origin + window.location.pathname);
+  }, [title, description]);
+}
 
 if ('scrollRestoration' in window.history) {
   window.history.scrollRestoration = 'manual';
@@ -122,6 +133,11 @@ function Home() {
       observer.disconnect();
     };
   }, []);
+
+  usePageMeta(
+    'Find My Tutor – #1 Tutor Finding App in Arunachal Pradesh | Home Tuition Itanagar',
+    'Find My Tutor is the best tutor finding app in Arunachal Pradesh. Find home tutors near you in Itanagar, Naharlagun & Northeast India. Search by subject & location. Download free on Android.'
+  );
 
   return (
     <main>
@@ -371,11 +387,33 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── Location SEO Section ── */}
+      <section id="local-seo" style={{ padding: '5rem 1.5rem 5rem', textAlign: 'center', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+          <p className="features-eyebrow reveal" style={{ marginBottom: '1rem' }}>Serving Arunachal Pradesh &amp; Northeast India</p>
+          <h2 className="features-title reveal" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', marginBottom: '1.5rem' }}>
+            The Best Home Tuition App<br />in Itanagar, Arunachal Pradesh
+          </h2>
+          <p className="features-sub reveal" style={{ maxWidth: '660px', margin: '0 auto 1.5rem' }}>
+            Whether you're a student in Itanagar, Naharlagun, Banderdewa, or anywhere across Arunachal Pradesh —
+            Find My Tutor helps you discover verified home tutors nearby in seconds.
+            Search by subject, set your radius, and connect directly. No middlemen. No commissions.
+          </p>
+          <p className="features-sub reveal" style={{ maxWidth: '660px', margin: '0 auto', fontSize: '0.95rem', opacity: 0.75 }}>
+            Subjects available: Mathematics · Science · Physics · Chemistry · English · Hindi · History · Geography · Accountancy · Political Science
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
 
 function AboutPage() {
+  usePageMeta(
+    'About Find My Tutor – EdTech Startup from Arunachal Pradesh, India',
+    'Learn about Find My Tutor, a pioneering EdTech startup from Naharlagun, Arunachal Pradesh connecting students with home tutors across Northeast India.'
+  );
   return (
     <section className="about-section" style={{ minHeight: '80vh' }}>
       <div className="about-container">
@@ -385,7 +423,7 @@ function AboutPage() {
           transition={{ duration: 0.6 }}
           className="about-heading"
         >
-          About
+          About Find My Tutor
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -393,7 +431,7 @@ function AboutPage() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="about-text"
         >
-          Find My Tutor is a reliable learning platform designed to connect students and parents with qualified academic tutors and skill-based mentors. From academic subjects to specialized skills like music, baking, and more, learners can easily find and connect with the right educators based on their needs. Guided by our belief, "Discover the Mentor Within Your Reach," we make it easier for learners to access trusted guidance and begin their learning journey with confidence.
+          Find My Tutor is a pioneering EdTech startup from Naharlagun, Arunachal Pradesh — a reliable learning platform designed to connect students and parents with qualified academic tutors and skill-based mentors across Northeast India. From Itanagar to every corner of Arunachal Pradesh, learners can easily find and connect with the right educators based on their needs. Guided by our belief, "Discover the Mentor Within Your Reach," we make it easier for learners to access trusted guidance and begin their learning journey with confidence.
         </motion.p>
 
         <motion.h2
@@ -437,6 +475,10 @@ function AboutPage() {
 }
 
 function FounderPage() {
+  usePageMeta(
+    'Founder Story – Tana John | Find My Tutor | Top Startup Arunachal Pradesh',
+    'Meet Tana John, CEO & MD of Find My Tutor — a top EdTech startup from Arunachal Pradesh. NERIST alumnus building the best tutor finding app for Northeast India.'
+  );
   return (
     <section className="about-section" style={{ minHeight: '80vh' }}>
       <div className="about-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -474,7 +516,8 @@ function FounderPage() {
         >
           <h3 className="about-heading" style={{ marginBottom: '0.5rem', fontSize: '2rem' }}>Tana John</h3>
           <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: '500' }}>CEO & MD</p>
-          <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '1.5rem' }}>NERIST Alumnus (Postgraduate)</p>
+          <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>NERIST Alumnus (Postgraduate)</p>
+          <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.5rem' }}>Founded in Naharlagun, Arunachal Pradesh · Northeast India</p>
         </motion.div>
 
         <motion.div
@@ -502,6 +545,10 @@ function FounderPage() {
 }
 
 function ContactPage() {
+  usePageMeta(
+    'Contact Find My Tutor – Get in Touch | Itanagar, Arunachal Pradesh',
+    'Contact Find My Tutor via WhatsApp or email. We are based in Naharlagun, Arunachal Pradesh. Join our community and help shape the best tutor app in Northeast India.'
+  );
   return (
     <section className="about-section" style={{ minHeight: '85vh', alignItems: 'center' }}>
       <div className="about-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -542,12 +589,28 @@ function ContactPage() {
             <Mail size={18} /> Email Us
           </button>
         </motion.div>
+
+        {/* Visible address for local SEO */}
+        <motion.address
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          style={{ marginTop: '3rem', fontStyle: 'normal', fontFamily: 'var(--font-heading)', color: 'var(--text-secondary)', fontSize: '0.9rem', textAlign: 'center', lineHeight: 1.7 }}
+        >
+          📍 Near The Family Store, Lekhi Village, Naharlagun,<br />
+          Arunachal Pradesh 791110, India<br />
+          ✉️ mailfindmytutor@gmail.com
+        </motion.address>
       </div>
     </section>
   );
 }
 
 function TermsOfService() {
+  usePageMeta(
+    'Terms of Service – Find My Tutor',
+    'Read the Terms of Service for Find My Tutor — the tutor finding app from Arunachal Pradesh, India.'
+  );
   return (
     <section className="about-section" style={{ minHeight: '80vh', paddingBottom: '6rem' }}>
       <div className="about-container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'left' }}>
@@ -685,6 +748,10 @@ function TermsOfService() {
 }
 
 function PrivacyPolicy() {
+  usePageMeta(
+    'Privacy Policy – Find My Tutor',
+    'Read the Privacy Policy for Find My Tutor — the tutor finding app from Arunachal Pradesh, India.'
+  );
   return (
     <section className="about-section" style={{ minHeight: '80vh', paddingBottom: '6rem' }}>
       <div className="about-container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'left' }}>
