@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow non-content paths
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.jsx$
+
+Sitemap: https://findmytutor.app/sitemap.xml
