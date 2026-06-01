@@ -149,8 +149,8 @@ function Home() {
             Live on Play Store
           </div>
           <div className="hero-eyebrow" style={{ marginBottom: 0, animation: 'none' }}>
-            <img src="/app-store.svg" alt="App Store" style={{ width: '16px', height: '16px', borderRadius: '4px' }} />
-            Launching Soon
+            <div className="hero-eyebrow-dot"></div>
+            Live on App Store
           </div>
         </div>
 
@@ -158,8 +158,12 @@ function Home() {
 
         <p className="hero-sub">Connect with local tutors by subject and location — or list yourself and grow your students.</p>
 
-        <div className="hero-actions" style={{ justifyContent: 'center' }}>
-          <button className="btn-blue" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.findmytutor.app', '_blank', 'noopener,noreferrer')}>Download on play store</button>
+        <div className="hero-actions" style={{ justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+          <button className="btn-blue" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.findmytutor.app', '_blank', 'noopener,noreferrer')}>Download on Play Store</button>
+          <button className="btn-black" onClick={() => window.open('https://apps.apple.com/in/app/find-my-tutor/id6755203370', '_blank', 'noopener,noreferrer')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <img src="/app-store.svg" alt="" style={{ width: '18px', height: '18px', borderRadius: '4px' }} />
+            Download on App Store
+          </button>
         </div>
       </section>
 
@@ -912,8 +916,10 @@ function App() {
           </div>
 
           <div className="nav-right">
-            <span className="early-access-text">iphone early access?</span>
-            <button className="btn-blue" onClick={() => window.open('https://testflight.apple.com/join/gxEWKKVY', '_blank', 'noopener,noreferrer')}>Download Beta</button>
+            <button className="btn-blue" onClick={() => window.open('https://apps.apple.com/in/app/find-my-tutor/id6755203370', '_blank', 'noopener,noreferrer')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <img src="/app-store.svg" alt="" style={{ width: '16px', height: '16px', borderRadius: '4px' }} />
+              Download on App Store
+            </button>
           </div>
         </div>
       </nav>
