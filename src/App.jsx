@@ -904,8 +904,7 @@ function App() {
         <div className="nav-content">
           <div className="nav-left">
             <Link to="/" className="logo-container">
-              <img src="/logo.jpg" alt="Logo" style={{ width: 26, height: 26, borderRadius: 6, objectFit: 'contain' }} />
-              FindMyTutor
+              <img src="/logo.jpg" alt="Find My Tutor Logo" style={{ height: 85, width: 'auto', objectFit: 'contain', transform: 'scale(1.15)' }} />
             </Link>
             <div className="nav-divider"></div>
             <div className="nav-links">
