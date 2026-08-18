@@ -814,7 +814,7 @@ const newHome = `function Home() {
         <p className="contact-sub2 reveal">Join our WhatsApp community to connect directly and help shape the future of Find My Tutor. For anything else, reach me directly.</p>
         <div className="contact-buttons reveal">
           <a href="#" className="btn-whatsapp">💬 Join WhatsApp Community</a>
-          <a href="mailto:mailfindmytutor@gmail.com" className="btn-outline-claude">✉️ Email Me</a>
+          <a href="mailto:findmytutor95@gmail.com" className="btn-outline-claude">✉️ Email Me</a>
         </div>
       </section>
     </main>

@@ -589,7 +589,7 @@ function ContactPage() {
           <button className="btn-black" onClick={() => window.open('https://chat.whatsapp.com/Bei1HqH5pvHJqdl1R8Yba3', '_blank', 'noopener,noreferrer')} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <MessageCircle size={18} /> Join WhatsApp Community
           </button>
-          <button className="btn-outline" onClick={() => window.location.href = 'mailto:mailfindmytutor@gmail.com'} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <button className="btn-outline" onClick={() => window.location.href = 'mailto:findmytutor95@gmail.com'} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <Mail size={18} /> Email Us
           </button>
         </motion.div>
@@ -603,7 +603,7 @@ function ContactPage() {
         >
           📍 Near The Family Store, Lekhi Village, Naharlagun,<br />
           Arunachal Pradesh 791110, India<br />
-          ✉️ mailfindmytutor@gmail.com
+          ✉️ findmytutor95@gmail.com
         </motion.address>
       </div>
     </section>
@@ -636,7 +636,7 @@ function TermsOfService() {
           <p style={{ marginBottom: '1.5rem' }}>to the extent expressly permitted in these terms.</p>
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Your privacy</h3>
-          <p style={{ marginBottom: '1rem' }}>Under applicable data protection laws, we are required to provide you with certain information including who we are, how we process your personal data and for what purposes and your rights in relation to your personal data and how to exercise them. For any privacy-related queries, please contact us at mailfindmytutor@gmail.com. It is important that you read and understand how we handle your data before using the App.</p>
+          <p style={{ marginBottom: '1rem' }}>Under applicable data protection laws, we are required to provide you with certain information including who we are, how we process your personal data and for what purposes and your rights in relation to your personal data and how to exercise them. For any privacy-related queries, please contact us at findmytutor95@gmail.com. It is important that you read and understand how we handle your data before using the App.</p>
           <p style={{ marginBottom: '1.5rem' }}>Where specific services made available through the App are subject to additional or different privacy terms, those terms will be made available to you at the point you use those services.</p>
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Other terms that may apply to you</h3>
@@ -660,7 +660,7 @@ function TermsOfService() {
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Support for the App and how to tell us about problems</h3>
           <p style={{ marginBottom: '1rem' }}><strong>Support.</strong> We may provide support resources for the App from time to time, including through in-app resources. We do not guarantee continuous or immediate support and may update, suspend, or discontinue support at any time.</p>
-          <p style={{ marginBottom: '1rem' }}><strong>Contacting us.</strong> If you experience problems with the App, discover a bug, or wish to contact us for any other reason, you can email us at mailfindmytutor@gmail.com. We aim to review messages within a reasonable time but do not guarantee response times.</p>
+          <p style={{ marginBottom: '1rem' }}><strong>Contacting us.</strong> If you experience problems with the App, discover a bug, or wish to contact us for any other reason, you can email us at findmytutor95@gmail.com. We aim to review messages within a reasonable time but do not guarantee response times.</p>
           <p style={{ marginBottom: '1.5rem' }}><strong>How we will communicate with you.</strong> If we need to contact you, we may do so by email or through in-app messages using the contact details you have provided to us.</p>
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>How you may use the App</h3>
@@ -742,7 +742,7 @@ function TermsOfService() {
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Contact Us</h3>
           <p style={{ marginBottom: '0.5rem' }}>If you have questions or concerns, please contact us:</p>
-          <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> mailfindmytutor@gmail.com</p>
+          <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> findmytutor95@gmail.com</p>
           <p style={{ marginBottom: '0.5rem' }}><strong>Address:</strong> Near The Family Store, Lekhi Village, Naharlagun, Arunachal Pradesh 791110, India</p>
           <p style={{ marginBottom: '1.5rem' }}>Please do not send routine enquiries to our registered office address.</p>
         </div>
@@ -768,7 +768,7 @@ function PrivacyPolicy() {
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Who We Are</h3>
           <p style={{ marginBottom: '1rem' }}>Find My Tutor is operated by an individual developer based in India. Our registered address is near The Family Store, Lekhi Village, Naharlagun, Arunachal Pradesh 791110, India.</p>
           <p style={{ marginBottom: '1rem' }}>We act as the data controller, meaning we determine how and why your personal data is processed.</p>
-          <p style={{ marginBottom: '1.5rem' }}><strong>Contact email:</strong> mailfindmytutor@gmail.com</p>
+          <p style={{ marginBottom: '1.5rem' }}><strong>Contact email:</strong> findmytutor95@gmail.com</p>
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Data Collection & Use</h3>
           <p style={{ marginBottom: '1rem' }}>When you create or use an account, we may collect:</p>
@@ -869,7 +869,7 @@ function PrivacyPolicy() {
             <li style={{ marginBottom: '0.5rem' }}>Withdraw consent for optional data processing</li>
             <li style={{ marginBottom: '0.5rem' }}>Object to certain types of processing</li>
           </ul>
-          <p style={{ marginBottom: '1.5rem' }}>To exercise these rights, contact us at: mailfindmytutor@gmail.com. We will respond within a reasonable time.</p>
+          <p style={{ marginBottom: '1.5rem' }}>To exercise these rights, contact us at: findmytutor95@gmail.com. We will respond within a reasonable time.</p>
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Children & Young Users</h3>
           <p style={{ marginBottom: '1rem' }}>The App may be used by students of all ages. We do not knowingly collect personal data from children under the age of 13 without appropriate parental consent. If you believe a child under 13 has provided us with personal data without consent, please contact us and we will take steps to delete that information.</p>
@@ -886,7 +886,7 @@ function PrivacyPolicy() {
 
           <h3 style={{ color: 'var(--text-primary)', fontSize: '1.4rem', fontWeight: 600, marginTop: '2.5rem', marginBottom: '1rem' }}>Contact Us</h3>
           <p style={{ marginBottom: '0.5rem' }}>If you have questions about this Privacy Policy or how your data is handled, please contact:</p>
-          <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> mailfindmytutor@gmail.com</p>
+          <p style={{ marginBottom: '0.5rem' }}><strong>Email:</strong> findmytutor95@gmail.com</p>
           <p style={{ marginBottom: '0.5rem' }}><strong>Address:</strong> Near The Family Store, Lekhi Village, Naharlagun, Arunachal Pradesh 791110, India</p>
           <p style={{ marginBottom: '1.5rem' }}>Please do not send routine enquiries to our registered office address.</p>
         </div>
