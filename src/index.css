@@ -448,16 +448,18 @@ footer {
   text-align: center;
   pointer-events: none;
   transition: opacity 0.4s;
+  z-index: 10;
+  width: 90%;
 }
 
 .screen-label-title {
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(24px, 4vw, 48px);
   font-weight: 700;
   font-family: var(--font-heading);
   letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--text-primary);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .screen-label-sub {
@@ -748,4 +750,7 @@ footer {
 @media (max-width: 600px) {
   /* .iphone { transform: scale(0.75); } handled in JS */
   .founder-card { padding: 32px 24px; }
+  .screen-label { bottom: 6vh; }
+  .screen-label-title { font-size: 22px; margin-bottom: 4px; }
+  .screen-label-sub { font-size: 14px; margin-top: 4px; }
 }
