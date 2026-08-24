@@ -896,11 +896,29 @@ function PrivacyPolicy() {
 }
 
 function App() {
+  const [showNav, setShowNav] = React.useState(true);
+  const lastScrollY = React.useRef(0);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="app">
       <ScrollToTop />
       {/* Navigation */}
-      <nav className="navbar">
+      <nav className={`navbar ${showNav ? '' : 'nav-hidden'}`}>
         <div className="nav-content">
           <div className="nav-left">
             <Link to="/" className="logo-container">

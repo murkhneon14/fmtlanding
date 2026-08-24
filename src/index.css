@@ -273,8 +273,7 @@ footer {
   }
 
   .nav-right {
-    justify-content: center;
-    gap: 0.5rem;
+    display: none;
   }
 
   .logo-container {
